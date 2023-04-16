@@ -1,17 +1,19 @@
-import { StatusBar } from "expo-status-bar";
-import "react-native-gesture-handler";
-import { StyleSheet, Text, View } from "react-native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+
 import Home from "./src/screens/Home";
 
-const {Screen, Navigator} = createStackNavigator()
+import "react-native-gesture-handler";
+
+const { Screen, Navigator } = createBottomTabNavigator();
 
 export default function App() {
   return (
     <View style={styles.container}>
       <NavigationContainer>
-        <Navigator>
+        <Navigator screenOptions={{ headerShown: false }}>
           <Screen name="Home" component={Home} />
         </Navigator>
       </NavigationContainer>

@@ -1,7 +1,0 @@
-O app deve ter as seguintes funcionalidades:
- - Adicionar negócio;
- - Gerir as finanças (entrada e saída);
- - Apresentar balanço e saldo calculado;
- - Apresentar gráfico de perspectiva;
- - Dar dicas de gestão;
- - Mostrar a saúde do negócio;
